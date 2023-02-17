@@ -1,0 +1,226 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.topView {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.topMenu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+}
+.top {
+  width: 30%;
+}
+.serviceLogo {
+  width: 185px;
+  height: 20px;
+}
+
+.topMenuBer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+}
+
+.humbergurButton {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sub {
+  font-weight: normal;
+  font-size: 5px;
+}
+.counselingMain {
+  border-radius: 50px;
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.centerMesseage {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+}
+.centerImg {
+  display: flex;
+}
+
+.centerbuttonber {
+  display: flex;
+}
+
+.counselingUrl,
+.pamphletUrl {
+  text-decoration: none;
+}
+
+.counseling {
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: orange;
+  color: white;
+  border: none;
+  margin: 10px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.pamphlet {
+  border-radius: 50px;
+  font-weight: bold;
+  background-color: white;
+  border: solid #a2a2a4 1px;
+  margin: 10px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+.centerText {
+  font-size: 1px;
+  color: #a2a2a4;
+}
+article {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+}
+
+.videoMovie {
+  margin: 40px;
+}
+
+.bottomSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 400px;
+}
+.bottomTittle {
+  font-size: 30px;
+  margin: 0;
+}
+
+.videoButton {
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.home:hover,
+.menu:hover,
+.humbergurMenu:hover,
+.counselingUrl:hover,
+.pamphletUrl:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+@media (max-width: 1080px) {
+  .menu {
+    display: none;
+  }
+
+  .topMenuBer {
+    justify-content: flex-end;
+  }
+
+  .humbergurMenu {
+    margin: 10px;
+  }
+  .humbergurButton {
+    display: inline;
+  }
+  .humbergurButton:hover {
+    cursor: pointer;
+  }
+
+  .topMenu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    height: 70px;
+    background-color: white;
+  }
+  .serviceLogo {
+    margin: 20px;
+  }
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottomVideo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .videoMovie {
+    width: 80%;
+    height: 80%;
+  }
+  .bottomSide {
+    width: 80%;
+  }
+  .bottomText {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .topView {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg.webp);
+    background-position: top 70px right 0px;
+    background-size: contain;
+    height: 1000px;
+  }
+  .center {
+    height: 900px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .counseling {
+    padding: 20px 40px;
+  }
+  .pamphlet {
+    display: none;
+  }
+
+  .bottomText {
+    width: 80%;
+  }
+}
+@media (min-width: 1028) {
+  .bottomVideo {
+    margin: 100px;
+  }
+}
